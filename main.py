@@ -1,6 +1,11 @@
 '''problema 1'''
 
 def is_palindrome(n):
+    '''
+    determina daca un nr e palindrom
+    :param n: numarul care trebuie verificat
+    :return: daca e palindrom sau nu
+    '''
     copie1 = n
     invers = 0
     while(n > 0):
@@ -62,6 +67,11 @@ def test_is_superprime():
 '''problema 3'''
 
 def lastPrimeNumber(n):
+    '''
+    determina cel mai apropiat numar prim de n
+    :param n: numarul dat
+    :return: cel mai mare numar prim mai mic ca n
+    '''
     for i in range (2, n):
         if isPrime(i):
             prim=i
