@@ -66,7 +66,7 @@ def test_is_superprime():
 
 '''problema 3'''
 
-def lastPrimeNumber(n):
+def get_largest_prime_below(n):
     '''
     determina cel mai apropiat numar prim de n
     :param n: numarul dat
@@ -78,10 +78,10 @@ def lastPrimeNumber(n):
     return(prim)
 
 
-def test_lastPrimeNumber():
-    assert lastPrimeNumber(14) == 13
-    assert lastPrimeNumber(2) == 2
-    assert lastPrimeNumber(20) == 19
+def test_get_largest_prime_below():
+    assert test_lastPrimeNumber(14) == 13
+    assert test_lastPrimeNumber(2) == 2
+    assert test_lastPrimeNumber(20) == 19
 
 
 '''Meniu'''
@@ -104,7 +104,7 @@ def main():
             print(is_superprime(n))
         elif optiune == "3":
             n=int(input("Dati numarul: "))
-            print(lastPrimeNumber(n))
+            print(get_largest_prime_below(n))
         elif optiune == "4":
             break
         else:
